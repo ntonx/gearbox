@@ -1,4 +1,4 @@
-FROM gearbox/pipeline:binary
+FROM antnp/gearbox_pipeline:binary
 VOLUME ["/home/source","/home/sink"]
 RUN mkdir /home/encode2f/ && cp config /home/encode2f/ 
 ENTRYPOINT ["pipeline","-s"]
