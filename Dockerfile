@@ -1,6 +1,6 @@
 FROM antnp/gearbox_pipeline:binary
 VOLUME ["/home/source","/home/sink"]
-RUN cp config /home/encode2f/ 
+#RUN cp config /home/encode2f/ 
 ENTRYPOINT ["pipeline","-s"]
 CMD ["pipeline","-c"]
 
