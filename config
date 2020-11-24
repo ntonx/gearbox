@@ -1,0 +1,24 @@
+<pipeline>
+    id=1
+    debugColor=1
+    debugLevel=3
+    daemon=1
+    name=pipeline-encode-2f
+    parallel=1
+    monitoring=10
+    path=/home/encode2f
+    pathSource=/home/source
+    pathSink=/home/sink
+</pipeline>
+<sync>
+    id=1
+    memory=512
+    parallel=1
+    path=/home/encode2f/filter1
+</sync>
+<sync>
+    id=2
+    memory=512
+    parallel=1
+    path=/home/encode2f/filter2
+</sync>
